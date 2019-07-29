@@ -27,12 +27,12 @@ export class AgendaComponent implements OnInit {
   ];
 
   handleDateClick(arg) {
-    this.fechahora = arg.date;
-    console.log('Fecha en click', this.fechahora);
+    // this.fechahora = arg.date;
+    console.log('Fecha en click', arg.date);
   }
 
   editarEvento(arg) {
-    alert(arg.date);
+    alert(arg.dateStr);
   }
 
   constructor() {}
